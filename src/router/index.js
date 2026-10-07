@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import LandingPage from '../views/LandingPage.vue'
 import VehiclesPage from '../views/VehiclesPage.vue'
 import HowItWorksPage from '../views/HowItWorksPage.vue'
@@ -6,7 +6,7 @@ import HelpPage from '../views/HelpPage.vue'
 import BookingPage from '../views/BookingPage.vue'
 
 export default createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes: [
         { path: '/', component: LandingPage },
         { path: '/soidukid', component: VehiclesPage },

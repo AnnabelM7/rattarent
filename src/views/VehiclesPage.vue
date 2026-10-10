@@ -12,6 +12,7 @@ const filters = [
 const vehicles = [
   {
     id: 1,
+    slug: 'elektriratas',
     type: 'e-bike',
     name: 'Elektriratas',
     info: 'Kuni 80 km',
@@ -22,6 +23,7 @@ const vehicles = [
   {
     id: 2,
     type: 'city-bike',
+    slug: 'linnaratas',
     name: 'Linnaratas',
     info: 'Piiramatu',
     price: 4,
@@ -31,6 +33,7 @@ const vehicles = [
   {
     id: 3,
     type: 'scooter',
+    slug: 'elektritouks',
     name: 'Elektritõuks',
     info: 'Kuni 40 km',
     price: 7,
@@ -72,6 +75,7 @@ const filteredVehicles = computed(() => {
           :key="v.id"
           detailed
           :name="v.name"
+          :slug="v.slug"
           :price="v.price"
           :info="v.info"
           :available="v.available"

@@ -1,6 +1,7 @@
 <script setup>
 defineProps({
   name: String,
+  slug: String,
   price: Number,
   info: String,
   available: Number,
@@ -24,7 +25,12 @@ defineProps({
       <span class="badge">{{ available }} saadaval</span>
     </div>
 
-    <RouterLink to="/broneeri" class="select-btn">VALI</RouterLink>
+    <RouterLink
+      :to="{ path: '/broneeri', query: { vehicle: slug } }"
+      class="select-btn"
+  >
+    VALI
+  </RouterLink>
   </div>
 </template>
 

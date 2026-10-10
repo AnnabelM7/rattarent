@@ -2,9 +2,9 @@
 import VehicleCard from '../components/VehicleCard.vue'
 
 const vehicles = [
-  { name: 'Elektriratas', price: 8 },
-  { name: 'Linnaratas', price: 4 },
-  { name: 'Elektritõuks', price: 7 }
+  { name: 'Elektriratas', slug: 'elektriratas', price: 8 },
+  { name: 'Linnaratas', slug: 'linnaratas', price: 4 },
+  { name: 'Elektritõuks', slug: 'elektritouks', price: 7 }
 ]
 </script>
 
@@ -26,6 +26,7 @@ const vehicles = [
             v-for="v in vehicles"
             :key="v.name"
             :name="v.name"
+            :slug="v.slug"
             :price="v.price"
         />
       </div>

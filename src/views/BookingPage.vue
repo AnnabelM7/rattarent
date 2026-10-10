@@ -4,11 +4,11 @@
     <h1>Broneeri</h1>
     <p class="intro">Vali sobiv sõiduk ja rendiaeg ning täida broneerimiseks vajalikud andmed.</p>
 
-    <div class="booking-form">
+    <form class="booking-form">
 
       <h2>1. Vali sõiduk</h2>
       <label for="vehicle">Sõiduki tüüp</label>
-      <select id="vehicle">
+      <select id="vehicle" required>
         <option value="">Vali sõiduk</option>
         <option value="elektriratas">Elektriratas – 8 €/h</option>
         <option value="linnaratas">Linnaratas – 4 €/h</option>
@@ -17,7 +17,7 @@
 
       <h2>2. Vali rendiaeg</h2>
       <label for="duration">Rendi kestus</label>
-      <select id="duration">
+      <select id="duration" required>
         <option value="">Vali kestus</option>
         <option value="1">1 tund</option>
         <option value="2">2 tundi</option>
@@ -28,19 +28,16 @@
       <h2>3. Sinu andmed</h2>
 
       <label for="name">Nimi</label>
-      <input type="text" id="name" placeholder="Sisesta oma nimi">
+      <input type="text" id="name" placeholder="Sisesta oma nimi" required>
 
       <label for="email">E-post</label>
-      <input type="email" id="email" placeholder="Sisesta oma e-post">
+      <input type="email" id="email" placeholder="Sisesta oma e-post" required>
 
       <label for="phone">Telefon</label>
-      <input type="tel" id="phone" placeholder="Sisesta telefoninumber">
+      <input type="tel" id="phone" placeholder="Sisesta telefoninumber" required>
 
-      <button class="booking-button">
-        KINNITA BRONEERING
-      </button>
-
-    </div>
+      <button type="submit" class="booking-button">KINNITA BRONEERING</button>
+    </form>
 
   </main>
 </template>

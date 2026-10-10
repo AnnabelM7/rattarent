@@ -1,10 +1,16 @@
-﻿<template>
+<script setup>
+function confirmBooking() {
+  alert('Broneering kinnitatud! Head sõitu!')
+}
+</script>
+
+<template>
   <main class="page">
 
     <h1>Broneeri</h1>
     <p class="intro">Vali sobiv sõiduk ja rendiaeg ning täida broneerimiseks vajalikud andmed.</p>
 
-    <form class="booking-form" onsubmit="alert('Broneering kinnitatud! Head sõitu!'); return false;">
+    <form class="booking-form" @submit.prevent="confirmBooking">
 
       <h2>1. Vali sõiduk</h2>
       <label for="vehicle">Sõiduki tüüp</label>

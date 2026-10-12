@@ -15,9 +15,7 @@ const totalPrice = computed(() => {
 
 const vehicles = ref([
   { id: 1, x: 210, y: 145 },
-  { id: 2, x: 300, y: 170 },
-  { id: 3, x: 420, y: 300 },
-  { id: 4, x: 500, y: 130 }
+  { id: 2, x: 300, y: 170 }
 ])
 
 function continueBooking() {

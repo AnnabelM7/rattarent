@@ -17,7 +17,10 @@ const vehicles = ref([
   { id: 1, x: 210, y: 145 },
   { id: 2, x: 300, y: 170 },
   { id: 3, x: 420, y: 300 },
-  { id: 4, x: 500, y: 130 }
+  { id: 4, x: 500, y: 130 },
+  { id: 5, x: 150, y: 260 },
+  { id: 6, x: 350, y: 350 },
+  { id: 7, x: 550, y: 240 }
 ])
 
 function continueBooking() {

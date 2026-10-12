@@ -5,7 +5,6 @@
       <RouterLink to="/soidukid">SÕIDUKID</RouterLink>
       <RouterLink to="/kuidas-tootab">KUIDAS TÖÖTAB</RouterLink>
       <RouterLink to="/abi">ABI</RouterLink>
-      <RouterLink to="/broneeri" class="book-btn">BRONEERI</RouterLink>
     </nav>
   </header>
 </template>

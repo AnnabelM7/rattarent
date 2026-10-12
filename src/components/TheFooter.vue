@@ -1,12 +1,6 @@
 <template>
   <footer class="footer">
     <p class="info">3 sõidukitüüpi · alates 4 € / h · broneeri ilma rakenduseta</p>
-    <p class="credit">
-      Projekt on tehtud aine Veebilehtede loomine edasijõudnutele (LTAT.03.015) raames.
-    </p>
-    <p class="credit">
-      Autorid: Annabel Maksimov, Laura Prengel ja Merike Mitnits
-    </p>
   </footer>
 </template>
 

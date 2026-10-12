@@ -25,12 +25,16 @@ defineProps({
       <span class="badge">{{ available }} saadaval</span>
     </div>
 
-    <RouterLink
-      :to="{ path: '/broneeri', query: { vehicle: slug } }"
-      class="select-btn"
-  >
-    VALI
-  </RouterLink>
+ <RouterLink
+  :to="{
+    elektriratas: '/elektriratas',
+    linnaratas: '/linnaratas',
+    elektritouks: '/elektritouks'
+  }[slug] || { path: '/broneeri', query: { vehicle: slug } }"
+  class="select-btn"
+>
+  VALI
+</RouterLink>
   </div>
 </template>
 

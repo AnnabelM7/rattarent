@@ -36,7 +36,6 @@ function continueBooking() {
     <section class="station-panel">
  <BikeMap :vehicles="vehicles" />
     </section>
-</section>
 
     <section class="vehicle-details">
       <h1>Linnaratas</h1>

@@ -35,11 +35,7 @@ function continueBooking() {
   <main class="vehicle-page">
     <section class="station-panel">
  <BikeMap :vehicles="vehicles" />
-   <div class="availability">
-    {{ vehicles.length }} LIIKURIT SAADAVAL
-  </div>
-</section>
-
+    </section>
     <section class="vehicle-details">
       <h1>Elektritõuks</h1>
 
